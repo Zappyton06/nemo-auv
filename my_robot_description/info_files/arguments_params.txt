@@ -1,0 +1,8 @@
+  <xacro:arg name="namespace" default="bluerov2"/>
+  <!-- thruster joints are fixed if not for gazebo use -->
+  <xacro:arg name="simulation" default="true"/>
+  
+  <xacro:arg name="density" default="1000"/>
+  
+  <xacro:property name="ns" value="$(arg namespace)"/>
+  <xacro:property name="density" value="$(arg density)"/>

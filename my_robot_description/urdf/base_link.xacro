@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="my_robot">
+
+    <link name="${ns}/base_link">
+        <pose xyz="0 0 0.155" rpy="0 0 0" />
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>     
+            <geometry>
+                <mesh filename="/home/zappington/sub_ws/src/my_robot_description/meshes/visual_updated/visual_base_link.dae"/>
+            </geometry>
+        </visual>
+        <inertial>
+            <mass value="16.655336950308023"/>
+            <inertia ixx="0.31520658221610337" ixy="0.0" ixz="0.0" iyy="0.5612468130234098" iyz="0.0" izz="0.5976589117638781"/>
+        </inertial>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box>0.65 0.40 0.40</box>
+            </geometry>
+        </collision>
+    </link>
+
+</robot>
